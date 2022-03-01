@@ -1,4 +1,4 @@
-# Spring RESTful Web Service
+# Spring Movie App RESTful Web Service
 ## _Made with Spring Boot by Denizhan Aras_
 
 Movie app is a RESTful web service which stores user created movies. User can create, update and delete movies.
