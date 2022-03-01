@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  movieapp-database:
+    image: mysql
+    platform: linux/amd64  #-> FOR M1 OPEN THIS LINE. FOR OTHERS CLOSE IT.
+    environment:
+      MYSQL_DATABASE: imdb
+      MYSQL_ROOT_PASSWORD: "123456"
+    ports:
+      - "3308:3306" #-> CHANGE LEFT SIDE FOR YOUR PC CONFIG.
+    container_name: yeczane-database
+    volumes:
+      - movieapp-volume:/etc/mysql/conf.d
+
+volumes:
+  movieapp-volume:
